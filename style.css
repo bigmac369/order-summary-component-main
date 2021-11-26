@@ -1,0 +1,134 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+    max-width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.text-content {
+    padding: 0px 25px 15px 25px;
+    text-align: center;
+}
+
+.title {
+    font-weight: 900;
+}
+
+.text-content p.subtitle {
+    color: #8a8a8a;
+    margin-bottom: 25px;
+    padding: 0px 10px 0px 10px;
+}
+
+.plan-box {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.plan-box a {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.plan-box a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%, 60%);
+}
+
+.plan-box-left {
+    display: flex;
+    align-items: center;
+}
+
+.plan-box-left img {
+    width: 45px;
+}
+
+.plan-middle-box {
+    margin-left: 15px;
+}
+
+.plan-middle-box p:nth-child(1) {
+    margin-bottom: 0px;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.plan-middle-box p:nth-child(2) {
+    margin-top: 0px;
+    color: #8a8a8a;
+    font-size: 14px;
+}
+
+.proceed-btn {
+    display: block;
+    text-decoration: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin: 20px 0px;
+    padding: 15px 0px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.proceed-btn:hover {
+    background-color: hsl(245, 75%, 52%, 60%);
+}
+
+.cancel-btn {
+    display: block;
+    text-decoration: none;
+    color: #8a8a8a;
+    padding: 0px 0px 15px 0px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.cancel-btn:hover {
+    color: #3b3333;
+}
+
+@media (min-width: 500px) {
+    .container {
+        max-width: 400px;
+    }
+    .text-content {
+        padding: 0px 40px 15px 40px;
+    }
+}
